@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{3A7A479C-5A47-2C30-6FDF-7F91B6DFC109}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Movement3D.cs">
+    <Files>
+      <File FileName="Assets/scripts/ball.cs" Line="17" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Cat" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="scripts" expanded="True">
+                <Node name="Movement3D.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1792031d-f91e-464b-8b98-a3ee9b8fd20c" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
