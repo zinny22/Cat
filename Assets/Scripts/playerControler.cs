@@ -4,33 +4,49 @@ using UnityEngine;
 
 public class playerControler : MonoBehaviour
 {
+    [SerializeField]
     private movement Movement;
-    private GameController gameController;
+    public GameController gameController;      //게임시작 종료 여부 판단을 위함 
     private float limitDeathY;
-    private Vector3 touchBeganPos;
-    private Vector3 touchEndedPos;
-    private Vector3 touchDif;
-    private float swipeSensitivity;
+
+    private Vector3 touchBeganPos;              //터치 시작 위치 
+    private Vector3 touchEndedPos;              //터치 종료 위치 
+    private Vector3 touchDif;                   //둘의 차이를 나타내줄 변수 값 
+    private float swipeSensitivity;             //스와이프 민감도 
 
     private void Awake()
     {
         Movement = GetComponent<movement>();
-        Movement.MoveTo(Vector3.right);
+        //최초 이동방향 설정
+        //Movement.MoveTo(Vector3.right);
 
         limitDeathY = transform.position.y - transform.localScale.y * 0.5f;
 
     }
 
+    private IEnumerator Start()
+    {
+        while (true)
+        {
+            if(gameController.IsGameStart == true)
+            {
+                Movement.MoveTo(Vector3.right);         //오른쪽으로 이동하게 하기 
+                yield break;
+            }
+            yield return null;
+        }
+    }
+
     void Update()
     {
+        if (gameController.IsGameOver == true) return;      //게임 종료 되면 다 멈추게 하기 
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
 
-
-            if (touch.phase == TouchPhase.Began)
+            if (touch.phase == TouchPhase.Began)   
             {
-                touchBeganPos = touch.position;
+                touchBeganPos = touch.position; 
             }
             if (touch.phase == TouchPhase.Ended)
             {
@@ -68,7 +84,5 @@ public class playerControler : MonoBehaviour
         {
             gameController.GameOver();
         }
-
-        if (gameController.IsGameOver == true) return;
     }
 }

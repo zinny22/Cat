@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{12088D4F-AF06-F7F5-3F1B-A44A238CCB6C}</ProjectGuid>
+    <ProjectGuid>{3A7A479C-5A47-2C30-6FDF-7F91B6DFC109}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,14 +56,15 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/Tile Spawner1.cs" />
-    <Compile Include="Assets/Scripts/tileSpawner.cs" />
-    <Compile Include="Assets/Scripts/movement.cs" />
-    <Compile Include="Assets/Scripts/playerControler.cs" />
-    <Compile Include="Assets/Scripts/cameraController.cs" />
-    <Compile Include="Assets/Scripts/GameController.cs" />
-    <Compile Include="Assets/Scripts/SceneLoader.cs" />
     <Compile Include="Assets/Scripts/itemController.cs" />
+    <Compile Include="Assets/Scripts/playerControler.cs" />
+    <Compile Include="Assets/Scripts/Tile Spawner1.cs" />
+    <Compile Include="Assets/Scripts/movement.cs" />
+    <Compile Include="Assets/Scripts/cameraController.cs" />
+    <Compile Include="Assets/Scripts/tileSpawner.cs" />
+    <Compile Include="Assets/Scripts/SceneLoader.cs" />
+    <Compile Include="Assets/Scripts/GameController.cs" />
+    <Compile Include="Assets/Scripts/FadeEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
